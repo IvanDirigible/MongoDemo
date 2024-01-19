@@ -1,0 +1,7 @@
+const { findAll } = require("../../controllers/userController")
+const routes = require("express").Router();
+
+routes.route("/").get(findAll)
+
+
+module.exports = routes
